@@ -18,13 +18,7 @@ const currentSlide = (n) => {
   showSlides(slideIndex = n);
 }
 
-const about = () => {
-  const aboutPage = document.getElementById("text")
-  if (aboutPage.style.display === 'none') {
-    aboutPage.setAttribute("style", "display:flex")
-    document.getElementById("header").setAttribute("class", "header__about")
-  } else{
-    aboutPage.style.display = "none";
-    document.getElementById("header").setAttribute("class", "header")
-  }
+const scrollToHash=(hashName)=> {
+  location.hash = "#" + hashName;
 }
+

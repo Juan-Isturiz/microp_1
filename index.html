@@ -11,18 +11,24 @@
 </head>
 
 <body class="body" id="body">
-  <div id="navbar">
-    <ul>
-      <li><a></a></li>
-      <li><a></a></li>
-      <li><a></a></li>
-    </ul>
-  </div>
   <div class="slideshow-container">
-    <img src="/Omedeto_Shinji.jpg" class="header__img">
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <div class="hero">
+      <img src="/Omedeto_Shinji.jpg" class="header__img">
+    </div>
+    <div class="hero">
+      <img src="/cuquita.jpeg" class="header__img">
+    </div>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
+  <ul class="navbar" id="navbar">
+    <li class="navbar__element"><a class="navbar__element__anchor">Hero</a></li>
+    <li class="navbar__element"><a class="navbar__element__anchor">About</a></li>
+    <li class="navbar__element"><a class="navbar__element__anchor">Skills</a></li>
+    <li class="navbar__element"><a class="navbar__element__anchor">Experience</a></li>
+    <li class="navbar__element"><a class="navbar__element__anchor">Contact me</a></li>
+  </ul>
+
 
 </body>
 <script src="main.js"></script>

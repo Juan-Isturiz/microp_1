@@ -29,7 +29,7 @@ const skillsData = {
 }
 const renderSkills = () => {
   let mainlist = document.createElement("ul");
-  mainlist.className='skill_list'
+  mainlist.className = 'skill_list'
   for (i = 0; i < skillsData.data.length; i++) {
     let liItem = document.createElement("li");
     let liText = document.createTextNode(skillsData.data[i].leng)
@@ -37,16 +37,16 @@ const renderSkills = () => {
     for (x = 0; x < skillsData.data[i].score; x++) {
       const giantrat = document.createElement("img")
       giantrat.src = "https://drive.google.com/uc?export=view&id=1Jvfg78IrdVf9msghI_ArFiEksueeZzrq"
-      giantrat.className="giantrat"
+      giantrat.className = "giantrat"
       liItem.appendChild(giantrat)
     }
-    liItem.className="skill_list__element"
+    liItem.className = "skill_list__element"
     mainlist.appendChild(liItem)
   }
   const cont = document.getElementById("skillcont")
   cont.appendChild(mainlist)
   cont.removeChild(document.getElementById("skillrenderbutt"))
-  
+
 }
 let slideIndex = 1;
 const showSlides = (n) => {
@@ -76,6 +76,10 @@ const onClickHandler = () => {
   const name = document.getElementById("name").value
   const mssg = document.getElementById("mssg").value
   const mail = document.getElementById("mail").value
-  console.log(`ip: 252.57.105.182\n${name}\n${mail}\n${mssg}`)
-  alert("Mensaje Enviado\n\nHemos captado su ip y la están rastrendo las autoridades")
+  if (name.length != 0 && mssg.length > 0 && mail.length > 0) {
+    console.log(`ip: 252.57.105.182\n${name}\n${mail}\n${mssg}`)
+    alert("Mensaje Enviado\n\nHemos captado su ip y la están rastrendo las autoridades")
+  } else {
+    alert("mi loco mete los atos ctm")
+  }
 }

@@ -16,6 +16,34 @@ body{
   overflow: hidden;
   background-color: #333;
 }
+.contact{
+  width: 100%;
+  list-style-type: none;
+}
+.contact__el{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.skill_list{
+  width: 100%;
+  list-style-type: none;
+}
+.skill_list__element{
+  display: flex;
+  flex-direction: row;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  align-items: center;
+  align-content: center;
+}
+.giantrat{
+  width: 50px;
+}
 .navbar__element {
   float: left;
 }
@@ -34,17 +62,7 @@ body{
 .header__img{
   width: 100%;
 }
-.header__text{
-  color:#bbb;
-  margin-left: 5%;
-}
-.header__ttl{
-  color: #965fd4;
-  align-self: center;
-  margin-left: 10%;
-  width: 100%;
-  flex-grow: 8;
-}
+
 .slideshow-container {
     margin-top: 13px;
     max-width: 100%;
@@ -96,31 +114,32 @@ body{
 }
 .container{
   display: flex;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-.container__right{
-  background-color: #b584ec;
-  color: #1d1a2f;
-  width: 100%;
-  border-radius: 0px 0px 8px 0px
-}
-.container__left{
-  color: #bbb;
+  flex-direction: column;
+  margin-top: 5%;
   background-color: #1d1a2f;
-  width: 38%;
-  border-radius: 0px 0px 0px 25px
+  color: #bbb;
+  border-radius: 25px 8px 25px 8px;
 }
-.container__left__text{
-  margin: 10px;
+.container__text{
+  margin: 5%;
 }
-.buttons{
-  display: flex;
-  flex-direction: row;
-  align-self: center;
-  align-content: center;
+.container__text__about{
+  margin:
+   0.5%;
 }
-.butt{
+.container__text__about__indent{
+  margin-left: 25px;
+}
+.container__about__title{
+  display: inline-block;
+  text-align: center;
+}
+.about__text{
+  background-color: #00304E;
+  box-shadow: -0.5em -0.5em 0em 0.5em #bbb;
+  margin: 6%;
+}
+.button{
   align-self: flex-start;
   background-color: #965fd4;
   color: #1d1a2f;
@@ -130,6 +149,44 @@ body{
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.butt:hover{
+.button:hover{
   color: #8bd450;
+}
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #333;
+  outline: 0;
+  font-size: 1.3rem;
+  color: white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+
+.form__field:focus {
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #965fd4);
+  border-image-slice: 1;
+}
+.button__skills{
+  align-self: flex-start;
+  background-color: #965fd4;
+  color: #1d1a2f;
+  border-radius: 25px 25px 25px 25px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 80px;
+}
+.button__skills:hover{
+  color: #8bd450;
+}
+.proj_img{
+  width: 100%;
 }

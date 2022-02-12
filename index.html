@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
-
 <body class="body" id="body">
   <div class="slideshow-container" id="hero">
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -31,23 +30,88 @@
     <li class="navbar__element"><a class="navbar__element__anchor" href="#exp">Experience</a></li>
     <li class="navbar__element"><a class="navbar__element__anchor" href="#contact">Contact me</a></li>
   </ul>
-  <div id="about">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident maiores in magni ipsam expedita officiis
-    recusandae consequuntur, perspiciatis molestiae dolorum eius, tempora odio facere, eum velit nostrum hic dolore?
-    Possimus!
+  <div class="container" id="about">
+    <div class="container__text">
+      <h1 class="container__about__title">About</h1>
+      <div class="about__text">
+        <div class="container__text__about">
+          <font color="#33E8FF">const</font>
+          <font color="#b584ec">name</font> = "<font color="#8bd450">Juan Andrés Isturiz Chong</font>"<br><br>
+          <font color="#33E8FF">let</font>
+          <font color="#b584ec">shortTermGoals</font> = [<br>
+          <p class="container__text__about__indent">"<font color="#8bd450">Graduarme</font>",
+            <br>"<font color="#8bd450">Aprender manejo de PostgressSQL y NoSQL</font>",
+            <br>"<font color="#8bd450">Pasar la materia</font>",<br>
+          </p>]
+          <br><br>
+          <font color="#33E8FF">let</font>
+          <font color="#b584ec">longTermGoals</font> = [<br>
+          <p class="container__text__about__indent">"<font color="#8bd450">Conseguir chamba</font>",
+            <br>"<font color="#8bd450">Encontrar una residencia propia</font>",
+            <br>"<font color="#8bd450">Escapar de LATAM</font>",<br>
+          </p>]
+          <br><br>
+          <font color="#33E8FF">let</font>
+          <font color="#b584ec">Likes</font> = [<br>
+          <p class="container__text__about__indent">"<font color="#8bd450">Musica</font>",
+            <br>"<font color="#8bd450">Cocina</font>",
+            <br>"<font color="#8bd450">Fairlygab</font>",
+            <br>"<font color="#8bd450">video gioco</font>",
+            <br>"<font color="#8bd450">Backend</font>",<br>
+          </p>]
+        </div>
+      </div>
+    </div>
   </div>
-  <div id="skills">
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quasi? Quia fugiat aliquid ab repellendus
-    impedit amet esse cumque facilis voluptatem illo sapiente ad, aliquam expedita alias ipsam minus accusamus?
+  <div class="container" id="skills">
+    <div class="container__text" id="skillcont" onload="renderSkills()">
+      <h1>Skills</h1>
+      <button onclick="renderSkills()" id="skillrenderbutt" class="button__skills">Render Skills</button>
+    </div>
   </div>
 
-  <div id="exp">
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, tempore iure! Ut facilis facere odit iure, iste sequi
-    velit deleniti molestiae consequuntur molestias, vero est reiciendis ullam eius assumenda eos.
+  <div id="exp" class="container">
+    <div class="container__text">
+      <h1>Experience</h1>
+      <div>
+        <h3>Culebrita Battle Royale</h3>
+        <p>Hecho con PyGames, usando Python<br>
+          30/02/1946<br>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Link Proyecto</a><br>
+          <img class="proj_img" src="https://drive.google.com/uc?export=view&id=1xalCABg8uDdBosvD-V_bIRk8v2lFnLw5"/>
+        </p> <br><br><br>
+        <h3>Proyecto de Grafos</h3>
+        <p>Java, NetBeans, GraphStream<br>
+          13/11/2020<br>
+          <a href="https://github.com/Juan-Isturiz/Proyecto_1" target="_blank">Link Proyecto</a><br>
+          <img class="proj_img" src="https://drive.google.com/uc?export=view&id=1FFO2Hxzcdn_McVpSzabaW0w8FnkqZd2Q"/>
+        </p> <br><br><br>
+        <h3>Página Personal</h3>
+        <p>JavaScript, HTML5, CSS, Lágrimas<br>
+          12/02/2022<br>
+          <a href="https://juan-isturiz.github.io/microp_1/" target="_blank">Link Proyecto</a><br>
+          <img class="proj_img" src="https://drive.google.com/uc?export=view&id=1zOqCXSFAFPriFazhoaSlbB9bMCU55rrj"/>
+        </p>
+      </div>
+    </div>
   </div>
-  <div id="contact">
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum cupiditate eos dignissimos, minima eaque magni
-    quis eum voluptas delectus culpa, voluptatem, iste numquam nobis in at incidunt veritatis suscipit tempora!
+  <div id="contact" class="container">
+    <div class="container__text">
+      <h1>Contact Me</h1>
+      <ul class="contact">
+        <li class="contact__el"><a href="https://twitter.com/jsonbeans" target="_blank">Twitter</a></li>
+        <li class="contact__el"><a href="https://wa.me/+584127188599" target="_blank">Whatsapp</a></li>
+      </ul>
+      <form>
+        <label>Name</label><br>
+        <input type="text" required class="form__field" id="name"/><br><br>
+        <label>E-mail</label><br>
+        <input type="email" required class="form__field" id="mail"/><br><br>
+        <label>Message</label><br>
+        <input type="text" required class="form__field" id="mssg"/><br><br>
+        <submit type="submit" class="button" onclick="onClickHandler()">Submit</submit>
+      </form>
+    </div>
   </div>
 
 

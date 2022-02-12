@@ -4,7 +4,7 @@ html{
 body{
   font-family: Arial, Helvetica, sans-serif;
   background-color: #734f9a;
-  overflow-x: hidden;
+  
 }
 .navbar{
   position: fixed;
@@ -14,27 +14,25 @@ body{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #1d1a2f;
+  background-color: #333;
 }
 .navbar__element {
   float: left;
 }
 .navbar__element__anchor {
   display: block;
-  color: #bbb;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 .navbar__element__anchor:hover {
-  background-color: #965fd4;
-  color:#8bd450
+  background-color: #111;
 }
 
 .header__img{
-  height: 40%;
-  align-self: center;
+  width: 100%;
 }
 .header__text{
   color:#bbb;
@@ -53,16 +51,11 @@ body{
     position: relative;
     margin:0;
     padding:0;
-    align-items: center;
   }
 
-.hero{
+.mySlides {
     margin-top: 13px;
-    display: inline-block;
-    text-align: center;
-    height: 40%;
-    background-color: aliceblue;
-    align-items: center;
+    display: none;    
 }
 .prev, .next {
   cursor: pointer;
@@ -71,7 +64,7 @@ body{
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: black;
+  color: white;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;

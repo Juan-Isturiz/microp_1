@@ -34,17 +34,7 @@ body{
 .header__img{
   width: 100%;
 }
-.header__text{
-  color:#bbb;
-  margin-left: 5%;
-}
-.header__ttl{
-  color: #965fd4;
-  align-self: center;
-  margin-left: 10%;
-  width: 100%;
-  flex-grow: 8;
-}
+
 .slideshow-container {
     margin-top: 13px;
     max-width: 100%;
@@ -96,8 +86,18 @@ body{
 }
 .container{
   display: flex;
-  margin-left: 5%;
-  margin-right: 5%;
+  flex-direction: column;
+  margin-top: 5%;
+  background-color: #1d1a2f;
+  color: #bbb;
+  border-radius: 25px 8px 25px 8px;
+}
+.container__about{
+  margin: 5%;
+}
+.container__about__title{
+  display: inline-block;
+  text-align: center;
 }
 .container__right{
   background-color: #b584ec;
@@ -113,6 +113,11 @@ body{
 }
 .container__left__text{
   margin: 10px;
+}
+.about__text{
+  background-color: #00304E;
+  box-shadow: -0.5em -0.5em 0em 0.5em #bbb;
+  margin: 5%;
 }
 .buttons{
   display: flex;
